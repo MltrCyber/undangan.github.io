@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    padding: 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+    background-color:#E8A2AB;
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
+.font-esthetic {
+    font-family: 'Sacramento', cursive !important;
+    color: #ffffff !important;
+}
+
+.font-arabic {
+    font-family: 'Noto Naskh Arabic', serif !important;
+    color: #ffffff !important;
+}
+
+.img-crop {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-crop>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.btn-music {
+    position: fixed;
+    bottom: 9vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+}
+
+.loading-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: #E8A2AB;
+    z-index: 1056 !important;
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+}
+
+.mouse-animation {
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+.mouse-animation>.scroll-animation {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #ffffff;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin-icon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-button {
+    animation: spin-icon 5s linear infinite;
+}
+
+.dark-section {
+    background-color: #D17D84 !important;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+footer {
+    background-color: #D17D84 !important;
+    margin-top: -0.5rem;
+    padding-bottom: 5rem;
+}
+
+.form-nama {
+    color: 
+    #D17D84;
+  }
+
+  .custom-card {
+    background-color: #ffffff !important;
+}
+
+.custom-card-text {
+    color: #D17D84 !important;
+    font-size: 0.9rem;
+}
+
+/* Pastikan warna latar belakang tombol selalu #D17D84 */
+.btn-D17D84 {
+    background-color: #D17D84 !important;
+    color: #FFFFFF !important;
+}
+
+/* Menjaga konsistensi untuk keadaan aktif, diklik, dan fokus */
+.btn-D17D84.clicked,
+.btn-D17D84:active,
+.btn-D17D84:focus {
+    background-color: #D17D84 !important;
+    color: #FFFFFF !important;
+}
+.white-card {
+    background-color: white;
+  }
+.text-D17D84 {
+    color: #545454;
+}  
+.card-body{
+    background-color: #FFFFFF;
+}
+.form-label-primary {
+    color: #545454;
+  }
