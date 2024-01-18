@@ -567,7 +567,6 @@ const comment = (() => {
         let tmp = buttonKirim.innerHTML;
         buttonKirim.innerHTML = loader;
 
-        let isSuccess = false;
         await request('POST', '/api/comment')
             .token(token)
             .body({
@@ -578,7 +577,6 @@ const comment = (() => {
             .then((res) => {
                 if (res.code == 201) {
                     owns.set(res.data.uuid, res.data.own);
-                    isSuccess = true;
                 }
             })
             .catch((err) => {
